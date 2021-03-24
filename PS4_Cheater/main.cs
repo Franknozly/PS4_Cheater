@@ -277,11 +277,6 @@
             {
                 if (new_scan_btn.Text == CONSTANT.FIRST_SCAN)
                 {
-                    if (MessageBox.Show("search size:" + (processManager.MappedSectionList.TotalMemorySize / 1024).ToString() + "KB") != DialogResult.OK)
-                    {
-                        return;
-                    }
-
                     memoryHelper.InitMemoryHandler((string)valueTypeList.SelectedItem,
                         (string)compareTypeList.SelectedItem, alignment_box.Checked, value_box.Text.Length);
 
